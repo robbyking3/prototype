@@ -1,0 +1,22 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // so using rems is more fun
+}
+body {
+  margin: 0;
+  padding: 3rem;
+  font-family: Helvetica, sans-serif;
+  background-color: $body-bg;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+button {
+	outline-color: $icon-color-hover;
+}

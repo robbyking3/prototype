@@ -1,0 +1,96 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: $btn-size-lg;
+  height: $btn-size-lg;
+  color: $icon-color;
+  cursor: pointer;
+  &.unset:not(:hover) .icon {
+    border-style: dashed;
+    border-color: rgba($icon-color, 0.6);
+  }
+  &.clear .icon {
+    border: none;
+    background: transparent;
+  }
+  .icon {
+    width: $btn-size-lg;
+    height: $btn-size-lg;
+  }
+  svg {
+    width: $icon-size-lg;
+    height: $icon-size-lg;
+  }
+  &:focus {
+    opacity: 1;
+    &:after, &:before {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+.btn-text {
+  padding: 1.4rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: currentColor;
+}
+
+.btn-sm {
+  min-width: $btn-size-sm;
+  height: $btn-size-sm;
+  .icon {
+    width: $btn-size-sm;
+    height: $btn-size-sm;
+  }
+  svg {
+    width: $icon-size-sm;
+    height: $icon-size-sm;
+  }
+}
+
+// hover 
+.btn {
+  &:hover, &:focus {
+    color: $icon-color-hover;
+    outline: none;
+    .icon {
+      border-style: solid;
+      box-shadow: 0 0 0 2px $icon-color-hover;
+    }
+  }
+  &:active {
+    color: darken($icon-color-hover,20%);
+    outline: none;
+    .icon {
+      border-style: solid;
+      box-shadow: 0 0 0 2px darken($icon-color-hover,20%);
+    }
+  }
+}
+
+.icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.2rem solid currentColor;
+  transition: box-shadow 0.1s ease-out;
+}
+
+
+.btn-close {
+  position: absolute;
+  right: 1.4rem;
+  top: 1.4rem;
+  .icon {
+    border: none;
+  }
+}
+
+// 16 - small
+// 24 - large

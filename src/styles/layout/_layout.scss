@@ -1,0 +1,26 @@
+.task-pane {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid $wrapper-border-color;
+}
+
+.task-toolbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 14px 14px 14px $offset;
+  background-color: $toolbar-bg-color;
+  border-bottom: 1px solid $toolbar-border-color;
+  .btn {
+    margin-right: 6px;
+  }
+}
+
+.section-row {
+  display: flex;
+  align-items: center;
+  padding-left: $offset;
+  padding-right: $offset;
+}
